@@ -83,10 +83,13 @@ set -g @tmux-dotbar-position top
 ```
 
 #### Session Indicator
-By default, the session name is displayed on the left with prefix highlight logic. You can move it to the right or change its text:
+By default, the session name is displayed on the left with prefix highlight logic and rounded. You can move it to the right or change its text:
 ```
 # Move session indicator to the right (defaults to "left")
 set -g @tmux-dotbar-session-position "right"
+
+# Style for the session indicator
+set -g @tmux-dotbar-rounded true
 
 # Change the text (default to " #S ") while keeping the prefix highlight logic
 set -g @tmux-dotbar-session-text "[#S]"
@@ -135,6 +138,7 @@ set -g @tmux-dotbar-maximized-icon "󰊓"
 set -g @tmux-dotbar-show-maximized-icon-for-all-tabs false
 set -g @tmux-dotbar-bold-status false
 set -g @tmux-dotbar-bold-current-window false
+set -g @tmux-dotbar-rounded true
 set -g @tmux-dotbar-ssh-enabled true
 set -g @tmux-dotbar-ssh-icon '󰌘'
 set -g @tmux-dotbar-ssh-icon-only false
